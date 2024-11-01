@@ -40,19 +40,16 @@ export const client = {
       fetchData(`${root.videos}videos/${id}`, callback);
     },
   },
-  featured: {
-    search(parameters, callback) {
+  collections: {
+    featured(parameters, callback) {
       fetchData(
         `${root.images}collections/featured?${urlEncode(parameters)}`,
         callback
       );
     },
-    popular(parameters, callback) {
-      fetchData(`${root.videos}popular?${urlEncode(parameters)}`, callback);
-    },
     detail(id, parameters, callback) {
       fetchData(
-        `${root.videos}collections/${id}?${urlEncode(parameters)}`,
+        `${root.videos}/collections/${id}?${urlEncode(parameters)}`,
         callback
       );
     },
