@@ -6,9 +6,9 @@
         <title>Pixstock - A large stock library</title>
         <meta name="title" content="Pixstock - A large stock library">
         <meta name="description" content="This is a stock photos app made by Bakh">
-        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+        <link rel="shortcut icon" href="./public/favicon.svg" type="image/svg+xml">
         <!-- theme js file  -->
-        <script src="./js/theme.js"></script>
+        <script src="./src/js/theme.js"></script>
         <!-- font link  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,11 @@
         <!-- material icon link  -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0" />
         <!-- css link  -->
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./src/css/style.css">
         <!-- js link  -->
-        <script src="./js/global.js" type="module"></script>
-        <script src="./js/app.js" type="module"></script>
-        <script src="./js/search.js" type="module"></script>
+        <script src="./src/js/global.js" type="module"></script>
+        <script src="./src/js/app.js" type="module"></script>
+        <script src="./src/js/search.js" type="module"></script>
     </head>
     <body>
         <!-- start header  -->
@@ -156,12 +156,12 @@
                             </a>
                         </div>
                         <div class="card-grid">
-                            <div class="card-banner" style="grid-area:b1;background-image: url(./assets/images/photo-banner-1.jpg);"></div>
-                            <div class="card-banner" style="grid-area:b2;background-image: url(./assets/images/photo-banner-2.jpg);"></div>
-                            <div class="card-banner" style="grid-area:b3;background-image: url(./assets/images/photo-banner-3.jpg);"></div>
-                            <div class="card-banner" style="grid-area:b4;background-image: url(./assets/images/photo-banner-4.jpg);"></div>
-                            <div class="card-banner" style="grid-area:b5;background-image: url(./assets/images/photo-banner-5.jpg);"></div>
-                            <div class="card-banner" style="grid-area:b6;background-image: url(./assets/images/photo-banner-6.jpg);"></div>
+                            <div class="card-banner" style="grid-area:b1;background-image: url(./src/assets/images/photo-banner-1.jpg);"></div>
+                            <div class="card-banner" style="grid-area:b2;background-image: url(./src/assets/images/photo-banner-2.jpg);"></div>
+                            <div class="card-banner" style="grid-area:b3;background-image: url(./src/assets/images/photo-banner-3.jpg);"></div>
+                            <div class="card-banner" style="grid-area:b4;background-image: url(./src/assets/images/photo-banner-4.jpg);"></div>
+                            <div class="card-banner" style="grid-area:b5;background-image: url(./src/assets/images/photo-banner-5.jpg);"></div>
+                            <div class="card-banner" style="grid-area:b6;background-image: url(./src/assets/images/photo-banner-6.jpg);"></div>
                         </div>
                     </div>
                     <div class="banner-card secondary">
@@ -180,32 +180,32 @@
                         <div class="card-grid">
                             <div class="card-banner" style="grid-area:b1">
                                 <video  class="video" width="360" height="420" autoplay muted loop>
-                                    <source src="./assets/videos/video-banner-1.mp4" type="video/mp4">
+                                    <source src="./src/assets/videos/video-banner-1.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="card-banner" style="grid-area:b2">
                                 <video  class="video" width="360" height="640" autoplay muted loop>
-                                    <source src="./assets/videos/video-banner-2.mp4" type="video/mp4">
+                                    <source src="./src/assets/videos/video-banner-2.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="card-banner" style="grid-area:b3">
                                 <video  class="video" width="480" height="360" autoplay muted loop>
-                                    <source src="./assets/videos/video-banner-3.mp4" type="video/mp4">
+                                    <source src="./src/assets/videos/video-banner-3.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="card-banner" style="grid-area:b4">
                                 <video  class="video" width="360" height="640" autoplay muted loop>
-                                    <source src="./assets/videos/video-banner-4.mp4" type="video/mp4">
+                                    <source src="./src/assets/videos/video-banner-4.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="card-banner" style="grid-area:b5">
                                 <video  class="video" width="640" height="360" autoplay muted loop>
-                                    <source src="./assets/videos/video-banner-5.mp4" type="video/mp4">
+                                    <source src="./src/assets/videos/video-banner-5.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="card-banner" style="grid-area:b6">
                                 <video  class="video" width="480" height="360" autoplay muted loop>
-                                    <source src="./assets/videos/video-banner-6.mp4" type="video/mp4">
+                                    <source src="./src/assets/videos/video-banner-6.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -224,22 +224,22 @@
                             </a>
                         </div>
                         <div class="card-grid">
-                            <div class="card-banner" style="grid-area:b1;background-image: url(./assets/images/collection-banner-1.jpg);"></div>
+                            <div class="card-banner" style="grid-area:b1;background-image: url(./src/assets/images/collection-banner-1.jpg);"></div>
                             <div class="card-banner" style="grid-area:b2">
                                 <video  class="video" width="360" height="420" autoplay muted loop>
-                                    <source src="./assets/videos/collection-banner-2.mp4" type="video/mp4">
+                                    <source src="./src/assets/videos/collection-banner-2.mp4" type="video/mp4">
                                 </video>
                             </div>
-                            <div class="card-banner" style="grid-area:b3;background-image: url(./assets/images/collection-banner-3.jpg);"></div>
-                            <div class="card-banner" style="grid-area:b4;background-image: url(./assets/images/collection-banner-4.jpg);"></div>
+                            <div class="card-banner" style="grid-area:b3;background-image: url(./src/assets/images/collection-banner-3.jpg);"></div>
+                            <div class="card-banner" style="grid-area:b4;background-image: url(./src/assets/images/collection-banner-4.jpg);"></div>
                             <div class="card-banner" style="grid-area:b5">
                                 <video  class="video" width="640" height="360" autoplay muted loop>
-                                    <source src="./assets/videos/collection-banner-5.mp4" type="video/mp4">
+                                    <source src="./src/assets/videos/collection-banner-5.mp4" type="video/mp4">
                                 </video>
                             </div>
                             <div class="card-banner" style="grid-area:b6">
                                 <video  class="video" width="640" height="338" autoplay muted loop>
-                                    <source src="./assets/videos/collection-banner-6.mp4" type="video/mp4">
+                                    <source src="./src/assets/videos/collection-banner-6.mp4" type="video/mp4">
                                 </video>
                             </div>
                         </div>
@@ -313,7 +313,6 @@
                             <a href="https://github.com/sxbsafah" class="label-small color-primary">Github</a>
                             <a href="https://github.com/sxbsafah" class="label-small color-primary">Twitter</a>
                             <a href="https://github.com/sxbsafah" class="label-small color-primary">Instagram</a>
-
                         </div>
                     </div>
                 </div>

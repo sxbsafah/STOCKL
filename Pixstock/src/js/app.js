@@ -5,7 +5,7 @@ import { videoCard } from "./video_card.js"
 import { collectionCard } from "./collection_card.js"
 const photoGrid = document.querySelector("[data-photo-grid]");
 photoGrid.innerHTML = `<div class="skeleton"></div>`.repeat(20);
-client.photos.curated({ page: 1, per_page: 20 }, (data) => {
+client.photos.curated({ page: 1, per_page: 100 }, (data) => {
     photoGrid.innerHTML = "";
     const { columns, columnsHeight } = initGrid(photoGrid)
     data.photos.forEach(photo => {
@@ -50,7 +50,7 @@ container.forEach((container) => {
 },)
 
 const collectionGrid = document.querySelector("[data-collection-grid]");
-client.collections.featured({ per_page: 20 }, (data) => {
+client.collections.featured({ per_page: 100 }, (data) => {
     data.collections.forEach((collection) => {
         console.log(collection)
         const $collectionCard = collectionCard(collection);

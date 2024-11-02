@@ -1,5 +1,5 @@
 import { urlEncode } from "./utils/urlEncode.js";
-const API_KEY = "";
+const API_KEY = import.meta.env.VITE_API_KEY;
 const requestOptions = {
   headers: {
     Authorization: API_KEY,
