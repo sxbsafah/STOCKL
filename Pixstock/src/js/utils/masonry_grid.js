@@ -5,6 +5,7 @@ export const initGrid = (container) => {
     for (let i = 0; i < columnCount; i++) {
         const column = document.createElement("div");
         column.classList.add("column");
+        column.setAttribute("data-grid-column","");
         container.appendChild(column);
         columns.push(column);
         columnsHeight.push(0)

@@ -742,6 +742,16 @@ button:disabled {
 }
 .banner-card .card-title {
   width: 16ch;
+  /* color:var(--on-primary-container); */
+}
+.banner-card  {
+  color:var(--on-primary-container);
+}
+.banner-card .card-title:nth-child(2) {
+  color:var(--on-secondary-container);
+}
+.banner-card .card-title:nth-child(3) {
+  color:var(--on-tertiary-container);
 }
 .banner-card .card-text {
   display: none;
@@ -959,3 +969,173 @@ button:disabled {
 }
 
 /* end footer  */
+
+/* media queries  */
+/* for larger than 600px screen */
+@media (min-width:600px) {
+  .banner-card { --gradient-direction:270deg; }
+  .banner-card .card-content { align-content: center; }
+  .banner-card .card-grid { 
+    left: 32%;
+    bottom:-16px;
+  }
+}
+/* for larger than 900px screen */
+
+@media (min-width:900px) {
+  .headline-medium {
+    font-size: var(--fs-display-small);
+    font-weight: var(--weight-regular);
+    line-height: 44px;
+  }
+  .title-large {
+    font-size: var(--fs-headline-small);
+    font-weight: var(--weight-regular);
+    line-height: 32px;
+  }
+  .top-app-bar .logo {
+    margin-inline-end:0 ;
+  }
+  .top-app-bar .search-open { display:none; }
+  .search-view {
+    all:unset;
+    position: static;
+    align-self: flex-start;
+    margin-block-start: 8px;
+    margin-inline:auto;
+    max-width: 560px;
+    width: 100%;
+    background-color:var(--surface-container-high);
+    border-radius: var(--radius-extra-large);
+    overflow: hidden;
+  }
+  .search-view:focus-within { box-shadow:var(--elevation-2) ; }
+  .search-bar { height: 48px; }
+  .search-view:not(:focus-within) .search-bar {
+    border:none;
+    --state-layer-bg:var(--on-surface);
+  }
+  .search-bar .icon-btn:first-child,
+  .search-view:not(:focus-within) :where(.icon-btn,.search-view-content) {
+    display: none;
+  }
+  .input-wrapper .leading-icon { display: block; }
+  .search-bar .input-wrapper {
+    display:flex;
+    align-items: center;
+    gap:16px;
+    padding-inline-start:16px;
+  }
+  .card .card-content {
+    opacity: 0;
+    transition: opacity var(--motion-duration-short-2) var(--motion-easing-linear);
+  }
+  .card:where(:hover,:focus-visible) .card-content { opacity: 1; };
+  .container { padding-inline: 24px; }
+  .section { 
+    margin-block-end:36px;
+  }
+  .section-title { margin-block-end: 20px }
+  .media-grid {
+    --column-count:3;
+    --column-gap:12px;
+  }
+  .collection-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+  .banner-card .card-content { padding:32px; }
+  .banner-card .card-text {
+    display: block;
+    max-width: 40%;
+  }
+  .collection .btn { margin-block:24px; };
+  .footer-card {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    align-items: flex-end;
+  }
+  .footer-card .text {
+    margin-block-end: 4px;
+  } 
+}
+@media (min-width:1240px) {
+  .headline-medium {
+    font-size: var(--fs-display-large);
+    font-weight: var(--weight-regular);
+    line-height:64px;
+  }
+  .title-large {
+    font-size:var(--fs-headline-medium);
+    font-weight:var(--weight-regular);
+    line-height:36px;
+  }
+  .scrim { display:none; }
+  .top-app-bar {
+    left:360px;
+    width: auto;
+    right:0;    
+  }
+  .top-app-bar,
+  .top-app-bar.active {
+    background-color: var(--background);
+  }
+  .top-app-bar :where(.icon-btn:first-child,.logo) {
+    display: none;
+  }
+  .search-view { max-width: 720px; }
+  .navigation {
+    --navigation-drawer-width:360px;
+    visibility:visible;
+    width:var(--navigation-drawer-width);
+    border-radius:0;
+  }
+  .navigation :where(.navigation-header,.drawer-list) {
+    opacity:1;
+  }
+  .navigation-header {
+    height:64px;
+    padding-inline:28px;
+  }
+  .navigation-header .icon-btn {
+    display:none;
+  }
+  .main,
+  .footer{ 
+    margin-inline-start:360px;
+  }
+  .container {
+    max-width:1128px;
+    width: 100%;
+    margin-inline:auto;
+  }
+  .media-grid { --column-gap:16px;}
+  .collection-grid {
+    grid-template-columns:repeat(3,1fr);
+  }
+  .section-title {
+    margin-block-end:24px;
+  }
+  .banner-card .card-content {
+    padding:48px;
+  }
+  /* the elements are not in but will in the future  */
+  .detail-wrapper {
+    height:788px;
+  }
+  .detail-banner { max-height:760px; }
+  .detail .title-large {
+    margin-block-start:40px;
+  }
+}
+@media (min-width:1400px) {
+  .banner-card {
+    height:560px;
+  }
+  .banner-card .card-content {
+    padding:84px;
+  }
+
+}
